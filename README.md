@@ -12,6 +12,12 @@ I created this simple script to scrape the top 100 websites. You can run on a ma
 
 https://github.com/repenno/top_100
 
+## GenAI Use-cases
+
+I developed this script to parse Syslogs into JSON objects and insert into a VectorDB that support timescale queries. 
+
+I use Langchain and OpenAI to create on-demand chatbots for security incidents and research insights into networking events.
+
 ## Functions
 
 - `parse_url_log(log_entry: str) -> dict`: Parses URL logs.
