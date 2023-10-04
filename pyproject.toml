@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "meraki-syslog-server"
+name = "meraki_syslog_parser"
 version = "0.1.0"
 description = "Meraki MX Syslog Parser"
 authors = ["reinaldopenno <rapenno@gmail.com>"]
