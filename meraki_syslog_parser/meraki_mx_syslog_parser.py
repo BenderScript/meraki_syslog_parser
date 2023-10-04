@@ -64,7 +64,7 @@ class MerakiMXSyslogParser:
             r"(?P<date>\w{3}\s+\d{1,2}\s+\d{2}:\d{2}:\d{2})\s+(?P<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+\d\s+("
             r"?P<id>\d+\.\d+)\s+(?P<user>\w+)\s+(?P<type>\w+)\s+src=(?P<src>.+?)\s+dst=(?P<dst>.+?)\s+"
             r"(?:mac=(?P<mac>[0-9A-Fa-f:]{17})\s+)?"
-            r"protocol=(?P<protocol>\w+)\s+sport=(?P<sport>\d+)\s+dport=(?P<dport>\d+)\s+decision=(?P<decision>\w+)")
+            r"protocol=(?P<protocol>\w+)\s+sport=(?P<sport>\d+)\s+dport=(?P<dport>\d+)\s+(?:pattern:\s(?P<pattern>\w+)\s)?(?P<decision>.+)")
         match = re.search(pattern, log_entry)
         if match:
             return match.groupdict()
